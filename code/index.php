@@ -15,7 +15,7 @@ try
 }
 catch (PDOException $e)
 {
-    http_response_code(500); //has to be first output instruction
+    http_response_code(500);
     echo 'Erreur : ' . $e->getMessage();
 }
 
